@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Hrn8sEb0EeiSj7My2Q0G1A" name="Entwurf Messenger">
+  <packagedElement xmi:type="uml:Component" xmi:id="_CNQaEEb1EeiSj7My2Q0G1A" name="GUI">
+    <interfaceRealization xmi:id="_Kg4mkEiJEeiM4c73Ik4G5g" client="_CNQaEEb1EeiSj7My2Q0G1A"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_AiCOAE3-Eeii7qBuTKxaDQ" name="Authentification">
+      <interfaceRealization xmi:id="_BTspkE4AEeii7qBuTKxaDQ" client="_AiCOAE3-Eeii7qBuTKxaDQ" supplier="_5eWd8E3_Eeii7qBuTKxaDQ" contract="_5eWd8E3_Eeii7qBuTKxaDQ"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_qC37sElPEeiqTYsYY-lLsw" client="_AiCOAE3-Eeii7qBuTKxaDQ" supplier="_mo3S8ElPEeiqTYsYY-lLsw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_JC8fIE3-Eeii7qBuTKxaDQ" name="ChatOberfläche"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_5eWd8E3_Eeii7qBuTKxaDQ" name="UserSession"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Zyz5oEb2EeiSj7My2Q0G1A" name="Nachricht" visibility="public">
+    <ownedAttribute xmi:id="_FuzRYEb5EeiSj7My2Q0G1A" name="ID"/>
+    <ownedAttribute xmi:id="_8ZsOEEb2EeiSj7My2Q0G1A" name="From"/>
+    <ownedAttribute xmi:id="_2Tg6AEb2EeiSj7My2Q0G1A" name="Text"/>
+    <ownedAttribute xmi:id="_Jim6MEb5EeiSj7My2Q0G1A" name="Timestamp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LYGuIEb3EeiSj7My2Q0G1A" name="Konversation" visibility="public">
+    <generalization xmi:id="_dAXGoE48Eeifc4UBHMIvRA" general="_USZQ8E48Eeifc4UBHMIvRA"/>
+    <generalization xmi:id="_dbrwsE48Eeifc4UBHMIvRA" general="_aC7FIE48Eeifc4UBHMIvRA"/>
+    <ownedAttribute xmi:id="_Narp4Eb3EeiSj7My2Q0G1A" name="Chat-Id" isID="true"/>
+    <ownedAttribute xmi:id="_OnctEEb5EeiSj7My2Q0G1A" name="Name"/>
+    <ownedAttribute xmi:id="_OpR5EEb5EeiSj7My2Q0G1A" name="Bild"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_g-UWsEb5EeiSj7My2Q0G1A" memberEnd="_g-UWsUb5EeiSj7My2Q0G1A _g-UWtEb5EeiSj7My2Q0G1A" navigableOwnedEnd="_g-UWsUb5EeiSj7My2Q0G1A _g-UWtEb5EeiSj7My2Q0G1A">
+    <ownedEnd xmi:id="_g-UWsUb5EeiSj7My2Q0G1A" name="chatnachrichts" association="_g-UWsEb5EeiSj7My2Q0G1A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g-UWskb5EeiSj7My2Q0G1A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g-UWs0b5EeiSj7My2Q0G1A" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_g-UWtEb5EeiSj7My2Q0G1A" name="chats" type="_LYGuIEb3EeiSj7My2Q0G1A" association="_g-UWsEb5EeiSj7My2Q0G1A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g-UWtUb5EeiSj7My2Q0G1A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g-UWtkb5EeiSj7My2Q0G1A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nkFw0Eb5EeiSj7My2Q0G1A" memberEnd="_nkFw0Ub5EeiSj7My2Q0G1A _nkFw1Eb5EeiSj7My2Q0G1A" navigableOwnedEnd="_nkFw0Ub5EeiSj7My2Q0G1A _nkFw1Eb5EeiSj7My2Q0G1A">
+    <ownedEnd xmi:id="_nkFw0Ub5EeiSj7My2Q0G1A" name="usernachrichts" association="_nkFw0Eb5EeiSj7My2Q0G1A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nkFw0kb5EeiSj7My2Q0G1A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nkFw00b5EeiSj7My2Q0G1A" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_nkFw1Eb5EeiSj7My2Q0G1A" name="users" type="_ywSq4Eb2EeiSj7My2Q0G1A" association="_nkFw0Eb5EeiSj7My2Q0G1A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nkFw1Ub5EeiSj7My2Q0G1A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nkFw1kb5EeiSj7My2Q0G1A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rP57QEb5EeiSj7My2Q0G1A" memberEnd="_rP57QUb5EeiSj7My2Q0G1A _rP57REb5EeiSj7My2Q0G1A" navigableOwnedEnd="_rP57QUb5EeiSj7My2Q0G1A _rP57REb5EeiSj7My2Q0G1A">
+    <ownedEnd xmi:id="_rP57QUb5EeiSj7My2Q0G1A" name="users" type="_ywSq4Eb2EeiSj7My2Q0G1A" association="_rP57QEb5EeiSj7My2Q0G1A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rP57Qkb5EeiSj7My2Q0G1A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rP57Q0b5EeiSj7My2Q0G1A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_rP57REb5EeiSj7My2Q0G1A" name="nachrichts" type="_Zyz5oEb2EeiSj7My2Q0G1A" association="_rP57QEb5EeiSj7My2Q0G1A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rP57RUb5EeiSj7My2Q0G1A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rP57Rkb5EeiSj7My2Q0G1A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_okPM0EiGEeiM4c73Ik4G5g" name="Benutzer">
+    <interfaceRealization xmi:id="_NS3zwEiOEeiM4c73Ik4G5g" client="_okPM0EiGEeiM4c73Ik4G5g"/>
+    <interfaceRealization xmi:id="_qsL-cElPEeiqTYsYY-lLsw" client="_okPM0EiGEeiM4c73Ik4G5g" supplier="_mo3S8ElPEeiqTYsYY-lLsw" contract="_mo3S8ElPEeiqTYsYY-lLsw"/>
+    <interfaceRealization xmi:id="_dSHJgElQEeiqTYsYY-lLsw" client="_okPM0EiGEeiM4c73Ik4G5g"/>
+    <interfaceRealization xmi:id="_qgYhoElQEeiqTYsYY-lLsw" client="_okPM0EiGEeiM4c73Ik4G5g"/>
+    <interfaceRealization xmi:id="_gExFEE43Eeifc4UBHMIvRA" client="_okPM0EiGEeiM4c73Ik4G5g" supplier="_eMZ1QE43Eeifc4UBHMIvRA" contract="_eMZ1QE43Eeifc4UBHMIvRA"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_ywSq4Eb2EeiSj7My2Q0G1A" name="User" visibility="public">
+      <ownedAttribute xmi:id="_nCswcEb4EeiSj7My2Q0G1A" name="User-Id" isID="true"/>
+      <ownedAttribute xmi:id="_oJJbIEb4EeiSj7My2Q0G1A" name="Benutzername"/>
+      <ownedAttribute xmi:id="_xQJb4Eb4EeiSj7My2Q0G1A" name="Vorname"/>
+      <ownedAttribute xmi:id="_zqMccEb4EeiSj7My2Q0G1A" name="Nachname"/>
+      <ownedAttribute xmi:id="_zvdW8Eb4EeiSj7My2Q0G1A" name="Paswort"/>
+      <ownedAttribute xmi:id="_zzsWsEb4EeiSj7My2Q0G1A" name="Profilbild"/>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_1jFsEEiKEeiM4c73Ik4G5g" name="">
+    <interfaceRealization xmi:id="_d0S0IEiNEeiM4c73Ik4G5g" client="_1jFsEEiKEeiM4c73Ik4G5g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_EkMTwEiLEeiM4c73Ik4G5g" name="ChatManagement">
+    <interfaceRealization xmi:id="_WPCS8EiNEeiM4c73Ik4G5g" client="_EkMTwEiLEeiM4c73Ik4G5g"/>
+    <interfaceRealization xmi:id="_HE4SUElQEeiqTYsYY-lLsw" client="_EkMTwEiLEeiM4c73Ik4G5g" supplier="_EAqTYElQEeiqTYsYY-lLsw" contract="_EAqTYElQEeiqTYsYY-lLsw"/>
+    <interfaceRealization xmi:id="_P0r7EElQEeiqTYsYY-lLsw" client="_EkMTwEiLEeiM4c73Ik4G5g"/>
+    <interfaceRealization xmi:id="_K8HQEE7WEeix7NJ54Tzhxw" client="_EkMTwEiLEeiM4c73Ik4G5g" supplier="_xYfeYElPEeiqTYsYY-lLsw" contract="_xYfeYElPEeiqTYsYY-lLsw"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_USZQ8E48Eeifc4UBHMIvRA" name="ZweierKonversation"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_aC7FIE48Eeifc4UBHMIvRA" name="GruppenKonversation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_NYXfIEiLEeiM4c73Ik4G5g" name="Nachricht">
+    <interfaceRealization xmi:id="_8DJYYEiNEeiM4c73Ik4G5g" client="_NYXfIEiLEeiM4c73Ik4G5g"/>
+    <interfaceRealization xmi:id="_BAetYE7WEeix7NJ54Tzhxw" client="_NYXfIEiLEeiM4c73Ik4G5g" supplier="_-Ntq0E7VEeix7NJ54Tzhxw" contract="_-Ntq0E7VEeix7NJ54Tzhxw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_S-_egEiNEeiM4c73Ik4G5g" client="_1jFsEEiKEeiM4c73Ik4G5g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_bfAXwEiNEeiM4c73Ik4G5g" client="_CNQaEEb1EeiSj7My2Q0G1A"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_7XelMEiNEeiM4c73Ik4G5g" client="_1jFsEEiKEeiM4c73Ik4G5g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_A4GVIEiOEeiM4c73Ik4G5g" client="_1jFsEEiKEeiM4c73Ik4G5g"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_mo3S8ElPEeiqTYsYY-lLsw" name="UserManagementI">
+    <ownedOperation xmi:id="_IGfYsE7UEeix7NJ54Tzhxw" name="findAllUsers"/>
+    <ownedOperation xmi:id="_gvCbwE7UEeix7NJ54Tzhxw" name="addUser"/>
+    <ownedOperation xmi:id="_ivPY8E7UEeix7NJ54Tzhxw" name="deleteUser"/>
+    <ownedOperation xmi:id="_uMqzoE7WEeix7NJ54Tzhxw" name="updateUser"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_xYfeYElPEeiqTYsYY-lLsw" name="MessagesI">
+    <ownedOperation xmi:id="_Y5HWcE7WEeix7NJ54Tzhxw" name="checkChat">
+      <ownedParameter xmi:id="_cREJsE7WEeix7NJ54Tzhxw" name="chatID"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_EAqTYElQEeiqTYsYY-lLsw" name="ManageChatGroups">
+    <ownedOperation xmi:id="_BNf9UElSEeiqTYsYY-lLsw" name="addConversation"/>
+    <ownedOperation xmi:id="_DL91IElSEeiqTYsYY-lLsw" name="deleteConversation"/>
+    <ownedOperation xmi:id="_F2Ob8ElSEeiqTYsYY-lLsw" name="addUserToConversation"/>
+    <ownedOperation xmi:id="_lKCuEE49Eeifc4UBHMIvRA" name="deleteUserFromConversation"/>
+    <ownedOperation xmi:id="_JFRK0ElSEeiqTYsYY-lLsw" name="Adminrechte geben"/>
+    <ownedOperation xmi:id="_LTadYElSEeiqTYsYY-lLsw" name="Adminrechte wegnehmen"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_HtRIAElQEeiqTYsYY-lLsw" client="_CNQaEEb1EeiSj7My2Q0G1A" supplier="_EAqTYElQEeiqTYsYY-lLsw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_PIHI8ElQEeiqTYsYY-lLsw" client="_NYXfIEiLEeiM4c73Ik4G5g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_bsVegElQEeiqTYsYY-lLsw" client="_NYXfIEiLEeiM4c73Ik4G5g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_p1t0AElQEeiqTYsYY-lLsw" client="_EkMTwEiLEeiM4c73Ik4G5g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_WnwvAE3-Eeii7qBuTKxaDQ" client="_AiCOAE3-Eeii7qBuTKxaDQ" supplier="_mo3S8ElPEeiqTYsYY-lLsw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_kaxL4E3-Eeii7qBuTKxaDQ" client="_AiCOAE3-Eeii7qBuTKxaDQ" supplier="_mo3S8ElPEeiqTYsYY-lLsw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_nDhW0E3-Eeii7qBuTKxaDQ" client="_CNQaEEb1EeiSj7My2Q0G1A" supplier="_mo3S8ElPEeiqTYsYY-lLsw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Anm_oE4AEeii7qBuTKxaDQ" client="_JC8fIE3-Eeii7qBuTKxaDQ" supplier="_5eWd8E3_Eeii7qBuTKxaDQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G1-J4E4BEeii7qBuTKxaDQ" memberEnd="_G1-J4U4BEeii7qBuTKxaDQ _G1-J5E4BEeii7qBuTKxaDQ" navigableOwnedEnd="_G1-J4U4BEeii7qBuTKxaDQ _G1-J5E4BEeii7qBuTKxaDQ">
+    <ownedEnd xmi:id="_G1-J4U4BEeii7qBuTKxaDQ" name="kontakts" type="_C7xlME4BEeii7qBuTKxaDQ" association="_G1-J4E4BEeii7qBuTKxaDQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G1-J4k4BEeii7qBuTKxaDQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G1-J404BEeii7qBuTKxaDQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_G1-J5E4BEeii7qBuTKxaDQ" name="users" type="_ywSq4Eb2EeiSj7My2Q0G1A" association="_G1-J4E4BEeii7qBuTKxaDQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G1-J5U4BEeii7qBuTKxaDQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G1-J5k4BEeii7qBuTKxaDQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BsbnwE4CEeii7qBuTKxaDQ" name="Chatteilnehmer" visibility="public">
+    <ownedAttribute xmi:id="_XJhbcE4CEeii7qBuTKxaDQ" name="Rolle"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NXyboE4CEeii7qBuTKxaDQ" memberEnd="_NXyboU4CEeii7qBuTKxaDQ _NXybpE4CEeii7qBuTKxaDQ" navigableOwnedEnd="_NXyboU4CEeii7qBuTKxaDQ _NXybpE4CEeii7qBuTKxaDQ">
+    <ownedEnd xmi:id="_NXyboU4CEeii7qBuTKxaDQ" name="chatgruppes" type="_LYGuIEb3EeiSj7My2Q0G1A" association="_NXyboE4CEeii7qBuTKxaDQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NXybok4CEeii7qBuTKxaDQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NXybo04CEeii7qBuTKxaDQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_NXybpE4CEeii7qBuTKxaDQ" name="chatteilnehmers" type="_BsbnwE4CEeii7qBuTKxaDQ" association="_NXyboE4CEeii7qBuTKxaDQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NXybpU4CEeii7qBuTKxaDQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NXybpk4CEeii7qBuTKxaDQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RDBXQE4CEeii7qBuTKxaDQ" memberEnd="_RDBXQU4CEeii7qBuTKxaDQ _RDBXRE4CEeii7qBuTKxaDQ" navigableOwnedEnd="_RDBXQU4CEeii7qBuTKxaDQ _RDBXRE4CEeii7qBuTKxaDQ">
+    <ownedEnd xmi:id="_RDBXQU4CEeii7qBuTKxaDQ" name="chatteilnehmers" type="_BsbnwE4CEeii7qBuTKxaDQ" association="_RDBXQE4CEeii7qBuTKxaDQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RDBXQk4CEeii7qBuTKxaDQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RDBXQ04CEeii7qBuTKxaDQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_RDBXRE4CEeii7qBuTKxaDQ" name="users" type="_ywSq4Eb2EeiSj7My2Q0G1A" association="_RDBXQE4CEeii7qBuTKxaDQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RDBXRU4CEeii7qBuTKxaDQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RDBXRk4CEeii7qBuTKxaDQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_I_ADYE43Eeifc4UBHMIvRA" name="Kontaktliste">
+    <interfaceRealization xmi:id="_aV6E0E43Eeifc4UBHMIvRA" client="_I_ADYE43Eeifc4UBHMIvRA" supplier="_YKZPgE43Eeifc4UBHMIvRA" contract="_YKZPgE43Eeifc4UBHMIvRA"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_C7xlME4BEeii7qBuTKxaDQ" name="Kontakt" visibility="public">
+      <ownedAttribute xmi:id="_VbheAE4BEeii7qBuTKxaDQ" name="User" type="_ywSq4Eb2EeiSj7My2Q0G1A"/>
+      <ownedAttribute xmi:id="_hF4MUE4BEeii7qBuTKxaDQ" name="Kontakt" type="_ywSq4Eb2EeiSj7My2Q0G1A"/>
+      <ownedAttribute xmi:id="_mFruME4BEeii7qBuTKxaDQ" name="KontaktKategorie"/>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_YKZPgE43Eeifc4UBHMIvRA" name="ManageContactList">
+    <ownedOperation xmi:id="_rXQtAE43Eeifc4UBHMIvRA" name="addContact"/>
+    <ownedOperation xmi:id="_rlCqUE43Eeifc4UBHMIvRA" name="deleteContact"/>
+    <ownedOperation xmi:id="_wS45gE43Eeifc4UBHMIvRA" name="getContactList"/>
+    <ownedOperation xmi:id="_L6LloE44Eeifc4UBHMIvRA" name="getContact"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Z7JbcE43Eeifc4UBHMIvRA" client="_CNQaEEb1EeiSj7My2Q0G1A" supplier="_YKZPgE43Eeifc4UBHMIvRA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_eMZ1QE43Eeifc4UBHMIvRA" name="Interface8">
+    <ownedOperation xmi:id="_XeIxAE44Eeifc4UBHMIvRA" name="getUser"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_gXga4E43Eeifc4UBHMIvRA" client="_I_ADYE43Eeifc4UBHMIvRA" supplier="_eMZ1QE43Eeifc4UBHMIvRA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-Ntq0E7VEeix7NJ54Tzhxw" name="Interface6"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_ABOP0E7WEeix7NJ54Tzhxw" client="_CNQaEEb1EeiSj7My2Q0G1A" supplier="_-Ntq0E7VEeix7NJ54Tzhxw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_I2XrkE7WEeix7NJ54Tzhxw" client="_NYXfIEiLEeiM4c73Ik4G5g" supplier="_xYfeYElPEeiqTYsYY-lLsw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_BwZ5AE7XEeix7NJ54Tzhxw" client="_EkMTwEiLEeiM4c73Ik4G5g" supplier="_eMZ1QE43Eeifc4UBHMIvRA"/>
+</uml:Model>
