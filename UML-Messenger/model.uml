@@ -54,7 +54,7 @@
     <nestedClassifier xmi:type="uml:Class" xmi:id="_USZQ8E48Eeifc4UBHMIvRA" name="doubleConversation"/>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_aC7FIE48Eeifc4UBHMIvRA" name="GroupConversation"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Component" xmi:id="_NYXfIEiLEeiM4c73Ik4G5g" name="ChatComunication">
+  <packagedElement xmi:type="uml:Component" xmi:id="_NYXfIEiLEeiM4c73Ik4G5g" name="ChatCommunication">
     <interfaceRealization xmi:id="_8DJYYEiNEeiM4c73Ik4G5g" client="_NYXfIEiLEeiM4c73Ik4G5g"/>
     <interfaceRealization xmi:id="_BAetYE7WEeix7NJ54Tzhxw" client="_NYXfIEiLEeiM4c73Ik4G5g" supplier="_-Ntq0E7VEeix7NJ54Tzhxw" contract="_-Ntq0E7VEeix7NJ54Tzhxw"/>
     <interfaceRealization xmi:id="_pTVk0FFVEeigE5XciQch7A" client="_NYXfIEiLEeiM4c73Ik4G5g"/>
@@ -139,7 +139,7 @@
     <ownedOperation xmi:id="_XeIxAE44Eeifc4UBHMIvRA" name="getUser"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_gXga4E43Eeifc4UBHMIvRA" client="_I_ADYE43Eeifc4UBHMIvRA" supplier="_eMZ1QE43Eeifc4UBHMIvRA"/>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_-Ntq0E7VEeix7NJ54Tzhxw" name="ComunicationI">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-Ntq0E7VEeix7NJ54Tzhxw" name="CommunicationI">
     <ownedOperation xmi:id="_7DJ4sFFZEeigE5XciQch7A" name="sendMessage"/>
     <ownedOperation xmi:id="_8lX5YFFZEeigE5XciQch7A" name="recieveMessage"/>
   </packagedElement>

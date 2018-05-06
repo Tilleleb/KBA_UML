@@ -643,7 +643,7 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Component%20Diagram']/@defaultLayer/@containerMappings[name='CO_Component']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_O27H0EiLEeiM4c73Ik4G5g" name="ChatComunication" outgoingEdges="_BBDVIE7WEeix7NJ54Tzhxw" incomingEdges="_I27FME7WEeix7NJ54Tzhxw _YezbMFFWEeigE5XciQch7A" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_O27H0EiLEeiM4c73Ik4G5g" name="ChatCommunication" outgoingEdges="_BBDVIE7WEeix7NJ54Tzhxw" incomingEdges="_I27FME7WEeix7NJ54Tzhxw _YezbMFFWEeigE5XciQch7A" width="12" height="10">
       <target xmi:type="uml:Component" href="model.uml#_NYXfIEiLEeiM4c73Ik4G5g"/>
       <semanticElements xmi:type="uml:Component" href="model.uml#_NYXfIEiLEeiM4c73Ik4G5g"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -722,7 +722,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Component%20Diagram']/@defaultLayer/@nodeMappings[name='CO_RequiredInterface']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_-uwiYE7VEeix7NJ54Tzhxw" name="ComunicationI" outgoingEdges="_ABsJ4E7WEeix7NJ54Tzhxw" width="3" height="3" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_-uwiYE7VEeix7NJ54Tzhxw" name="CommunicationI" outgoingEdges="_ABsJ4E7WEeix7NJ54Tzhxw" width="3" height="3" resizeKind="NSEW">
       <target xmi:type="uml:Interface" href="model.uml#_-Ntq0E7VEeix7NJ54Tzhxw"/>
       <semanticElements xmi:type="uml:Interface" href="model.uml#_-Ntq0E7VEeix7NJ54Tzhxw"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -796,7 +796,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Component%20Diagram']/@defaultLayer/@nodeMappings[name='CO_ProvidedInterface']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_-u0z0E7VEeix7NJ54Tzhxw" name="ComunicationI" incomingEdges="_BBDVIE7WEeix7NJ54Tzhxw" width="2" height="2">
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_-u0z0E7VEeix7NJ54Tzhxw" name="CommunicationI" incomingEdges="_BBDVIE7WEeix7NJ54Tzhxw" width="2" height="2">
       <target xmi:type="uml:Interface" href="model.uml#_-Ntq0E7VEeix7NJ54Tzhxw"/>
       <semanticElements xmi:type="uml:Interface" href="model.uml#_-Ntq0E7VEeix7NJ54Tzhxw"/>
       <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_-u0z0U7VEeix7NJ54Tzhxw" showIcon="false" borderColor="39,76,114" shape="dot" color="114,159,207">
