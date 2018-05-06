@@ -22,26 +22,6 @@
     <ownedAttribute xmi:id="_OnctEEb5EeiSj7My2Q0G1A" name="Name"/>
     <ownedAttribute xmi:id="_OpR5EEb5EeiSj7My2Q0G1A" name="Bild"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_g-UWsEb5EeiSj7My2Q0G1A" memberEnd="_g-UWsUb5EeiSj7My2Q0G1A _g-UWtEb5EeiSj7My2Q0G1A" navigableOwnedEnd="_g-UWsUb5EeiSj7My2Q0G1A _g-UWtEb5EeiSj7My2Q0G1A">
-    <ownedEnd xmi:id="_g-UWsUb5EeiSj7My2Q0G1A" name="chatnachrichts" association="_g-UWsEb5EeiSj7My2Q0G1A">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g-UWskb5EeiSj7My2Q0G1A"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g-UWs0b5EeiSj7My2Q0G1A" value="*"/>
-    </ownedEnd>
-    <ownedEnd xmi:id="_g-UWtEb5EeiSj7My2Q0G1A" name="chats" type="_LYGuIEb3EeiSj7My2Q0G1A" association="_g-UWsEb5EeiSj7My2Q0G1A">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g-UWtUb5EeiSj7My2Q0G1A" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g-UWtkb5EeiSj7My2Q0G1A" value="1"/>
-    </ownedEnd>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nkFw0Eb5EeiSj7My2Q0G1A" memberEnd="_nkFw0Ub5EeiSj7My2Q0G1A _nkFw1Eb5EeiSj7My2Q0G1A" navigableOwnedEnd="_nkFw0Ub5EeiSj7My2Q0G1A _nkFw1Eb5EeiSj7My2Q0G1A">
-    <ownedEnd xmi:id="_nkFw0Ub5EeiSj7My2Q0G1A" name="usernachrichts" association="_nkFw0Eb5EeiSj7My2Q0G1A">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nkFw0kb5EeiSj7My2Q0G1A"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nkFw00b5EeiSj7My2Q0G1A" value="*"/>
-    </ownedEnd>
-    <ownedEnd xmi:id="_nkFw1Eb5EeiSj7My2Q0G1A" name="users" type="_ywSq4Eb2EeiSj7My2Q0G1A" association="_nkFw0Eb5EeiSj7My2Q0G1A">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nkFw1Ub5EeiSj7My2Q0G1A" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nkFw1kb5EeiSj7My2Q0G1A" value="1"/>
-    </ownedEnd>
-  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_rP57QEb5EeiSj7My2Q0G1A" memberEnd="_rP57QUb5EeiSj7My2Q0G1A _rP57REb5EeiSj7My2Q0G1A" navigableOwnedEnd="_rP57QUb5EeiSj7My2Q0G1A _rP57REb5EeiSj7My2Q0G1A">
     <ownedEnd xmi:id="_rP57QUb5EeiSj7My2Q0G1A" name="users" type="_ywSq4Eb2EeiSj7My2Q0G1A" association="_rP57QEb5EeiSj7My2Q0G1A">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rP57Qkb5EeiSj7My2Q0G1A" value="1"/>
