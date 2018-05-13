@@ -72,7 +72,7 @@
       <ownedParameter xmi:id="_cREJsE7WEeix7NJ54Tzhxw" name="chatID"/>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_EAqTYElQEeiqTYsYY-lLsw" name="ManageChatGroups">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_EAqTYElQEeiqTYsYY-lLsw" name="ManageChatGroupsI">
     <ownedOperation xmi:id="_BNf9UElSEeiqTYsYY-lLsw" name="addConversation"/>
     <ownedOperation xmi:id="_DL91IElSEeiqTYsYY-lLsw" name="deleteConversation"/>
     <ownedOperation xmi:id="_pC3YgFFYEeigE5XciQch7A" name="updateConversation"/>
@@ -105,7 +105,7 @@
       <ownedAttribute xmi:id="_hF4MUE4BEeii7qBuTKxaDQ" name="FK_Kontakt" type="_ywSq4Eb2EeiSj7My2Q0G1A"/>
     </nestedClassifier>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_YKZPgE43Eeifc4UBHMIvRA" name="ManageContactList">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_YKZPgE43Eeifc4UBHMIvRA" name="ManageContactListI">
     <ownedOperation xmi:id="_rXQtAE43Eeifc4UBHMIvRA" name="addContact"/>
     <ownedOperation xmi:id="_rlCqUE43Eeifc4UBHMIvRA" name="deleteContact"/>
     <ownedOperation xmi:id="_wS45gE43Eeifc4UBHMIvRA" name="getContactList"/>
